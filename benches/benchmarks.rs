@@ -19,13 +19,5 @@ pub fn full_benchmark(c: &mut Criterion) {
     }));
 }
 
-pub fn day4_bench(c: &mut Criterion) {
-    c.bench_function("Day 4", |b| b.iter(|| 
-    {
-        day4::p1(black_box("bgvyzdsv"));
-        day4::p2(black_box("bgvyzdsv"));
-    }));
-}
-
-criterion_group!(benches, day4_bench);
+criterion_group!(benches, full_benchmark);
 criterion_main!(benches);
