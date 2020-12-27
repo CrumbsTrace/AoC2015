@@ -1,0 +1,19 @@
+[package]
+name = "aoc2015"
+version = "0.1.0"
+authors = ["CrumbsTrace <v.a.kalkman@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+md-5 = "0.9.1"
+regex = "1.4.2"
+
+[dev-dependencies]
+criterion = "0.3.3"
+
+
+[[bench]]
+name = "benchmarks"
+harness = false
